@@ -5,7 +5,7 @@ Implementation of the algorithm described in the paper ["On the Power of Color R
 Using `cmake` you can simply type `cmake cmake-build-debug`, otherwise (using `gcc`)
 
 ```Bash
-$ g++ main.cpp src/.* -std=c++11 -o amendibility_test -O2
+$ g++ main.cpp src/.* -std=c++11 -o amenibility_test -O2
 ```
 ## Usage
 You can select the data set in `main.cpp`.
