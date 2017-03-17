@@ -1,7 +1,7 @@
 /**********************************************************************
  * Copyright (C) 2017 Christopher Morris <christopher.morris@udo.edu>
  *
- * This file is part of Amendable.
+ * This file is part of Amendable. An implementation of the algorithm described in:
  *
  * @InProceedings{Arvind+2015,
  *   author = "Arvind, V. and K{\"o}bler, Johannes and Rattan, Gaurav and Verbitsky, Oleg",

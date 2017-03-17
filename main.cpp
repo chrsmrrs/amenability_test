@@ -26,7 +26,6 @@ int main() {
     GraphDatabase graph_data_base = AuxiliaryMethods::read_graph_txt_file("NCI1");
     cout << "Graph data base loaded." << endl;
 
-
     double num_is_amendable = 0;
     auto start = chrono::high_resolution_clock::now();
     for (const auto g: graph_data_base) {
