@@ -16,7 +16,7 @@
 int main() {
     GraphLibrary::Graph graph;
 
-    GraphDatabase graph_data_base = AuxiliaryMethods::read_graph_txt_file("IMDB-BINARY");
+    GraphDatabase graph_data_base = AuxiliaryMethods::read_graph_txt_file("NCI1");
     cout << "Graph data base loaded." << endl;
 
 
