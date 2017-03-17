@@ -3,6 +3,14 @@
  *
  * This file is part of Amendable.
  *
+ * @InProceedings{Arvind+2015,
+ *   author = "Arvind, V. and K{\"o}bler, Johannes and Rattan, Gaurav and Verbitsky, Oleg",
+ *   title = "On the Power of Color Refinement",
+ *   booktitle = "20th International Symposium on Fundamentals of Computation Theory",
+ *   year = "2015",
+ *   pages = "339--350"
+ * }
+ *
  * Amendable can not be copied or distributed without the express
  * permission of Christopher Morris.
  *********************************************************************/

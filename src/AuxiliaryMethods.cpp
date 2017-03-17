@@ -3,6 +3,14 @@
  *
  * This file is part of Amendable.
  *
+ * @InProceedings{Arvind+2015,
+ *   author = "Arvind, V. and K{\"o}bler, Johannes and Rattan, Gaurav and Verbitsky, Oleg",
+ *   title = "On the Power of Color Refinement",
+ *   booktitle = "20th International Symposium on Fundamentals of Computation Theory",
+ *   year = "2015",
+ *   pages = "339--350"
+ * }
+ *
  * Amendable can not be copied and/or distributed without the express
  * permission of Christopher Morris.
  *********************************************************************/
@@ -29,7 +37,7 @@ namespace AuxiliaryMethods {
         string line;
         vector<uint> graph_indicator;
         ifstream myfile(
-                "/home/morris/amendable/data_sets/" + data_set_name + "/" + data_set_name +
+                "/home/morris/amendibility_test/data_sets/" + data_set_name + "/" + data_set_name +
                 "_graph_indicator.txt");
         if (myfile.is_open()) {
             while (getline(myfile, line)) {
@@ -48,7 +56,7 @@ namespace AuxiliaryMethods {
         string label;
         Labels node_labels;
         ifstream labels(
-                "/home/morris/amendable/data_sets/" + data_set_name + "/" + data_set_name + "_node_labels.txt");
+                "/home/morris/amendibility_test/data_sets/" + data_set_name + "/" + data_set_name + "_node_labels.txt");
         if (labels.is_open()) {
             while (getline(labels, label)) {
                 node_labels.push_back(stoul(label));
@@ -84,7 +92,8 @@ namespace AuxiliaryMethods {
 
         // Insert edges for each graph.
         vector<int> edges;
-        ifstream edge_file("/home/morris/amendable/data_sets/" + data_set_name + "/" + data_set_name + "_A.txt");
+        ifstream edge_file(
+                "/home/morris/amendibility_test/data_sets/" + data_set_name + "/" + data_set_name + "_A.txt");
         if (edge_file.is_open()) {
             while (getline(edge_file, line)) {
                 vector<int> r = split_string(line);

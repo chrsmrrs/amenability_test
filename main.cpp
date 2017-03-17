@@ -3,7 +3,17 @@
  *
  * This file is part of Amendable.
  *
- * Amen can not be copied or distributed without the express
+ * Implementation of the algorithm described in:
+ *
+ * @InProceedings{Arvind+2015,
+ *   author = "Arvind, V. and K{\"o}bler, Johannes and Rattan, Gaurav and Verbitsky, Oleg",
+ *   title = "On the Power of Color Refinement",
+ *   booktitle="20th International Symposium on Fundamentals of Computation Theory",
+ *   year="2015",
+ *   pages="339--350"
+ * }
+ *
+ * Amendable can not be copied or distributed without the express
  * permission of Christopher Morris.
  *********************************************************************/
 
@@ -11,12 +21,9 @@
 #include <iostream>
 #include "src/AuxiliaryMethods.h"
 #include "src/ColorRefinementAmendibility.h"
-#include "src/Graph.h"
 
 int main() {
-    GraphLibrary::Graph graph;
-
-    GraphDatabase graph_data_base = AuxiliaryMethods::read_graph_txt_file("IMDB-BINARY");
+    GraphDatabase graph_data_base = AuxiliaryMethods::read_graph_txt_file("NCI1");
     cout << "Graph data base loaded." << endl;
 
 
