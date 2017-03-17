@@ -17,12 +17,12 @@
 
 #include <algorithm>
 #include <queue>
-#include "ColorRefinementAmendibility.h"
+#include "ColorRefinementAmenability.h"
 
-namespace ColorRefinementAmendibility {
-    ColorRefinementAmendibility::ColorRefinementAmendibility(const GraphLibrary::Graph &graph) : m_graph(graph) {}
+namespace ColorRefinementAmenability {
+    ColorRefinementAmenability::ColorRefinementAmenability(const GraphLibrary::Graph &graph) : m_graph(graph) {}
 
-    bool ColorRefinementAmendibility::check_amendability() {
+    bool ColorRefinementAmenability::check_amenability() {
         // Manages colors of stable coloring.
         unordered_set<Label> colors;
         // Maps color to nodes.
@@ -218,9 +218,9 @@ namespace ColorRefinementAmendibility {
         return true;
     }
 
-    Labeling ColorRefinementAmendibility::compute_stable_coloring(unordered_set<Label> &node_colors,
-                                                                  unordered_multimap<Label, Node> &colors_to_nodes,
-                                                                  unordered_map<Node, Label> &node_to_color) const {
+    Labeling ColorRefinementAmenability::compute_stable_coloring(unordered_set<Label> &node_colors,
+                                                                 unordered_multimap<Label, Node> &colors_to_nodes,
+                                                                 unordered_map<Node, Label> &node_to_color) const {
         Labeling node_label;
         size_t num_nodes = m_graph.get_num_nodes();
 
@@ -282,10 +282,10 @@ namespace ColorRefinementAmendibility {
         return node_label;
     }
 
-    Label ColorRefinementAmendibility::pairing(const Label a, const Label b) const {
+    Label ColorRefinementAmenability::pairing(const Label a, const Label b) const {
         return a >= b ? a * a + a + b : a + b * b;
     }
 
-    ColorRefinementAmendibility::~ColorRefinementAmendibility() {}
+    ColorRefinementAmenability::~ColorRefinementAmenability() {}
 
 }

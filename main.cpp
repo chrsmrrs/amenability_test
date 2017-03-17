@@ -20,7 +20,7 @@
 #include <chrono>
 #include <iostream>
 #include "src/AuxiliaryMethods.h"
-#include "src/ColorRefinementAmendibility.h"
+#include "src/ColorRefinementAmenability.h"
 
 int main() {
     GraphDatabase graph_data_base = AuxiliaryMethods::read_graph_txt_file("NCI1");
@@ -29,8 +29,8 @@ int main() {
     double num_is_amendable = 0;
     auto start = chrono::high_resolution_clock::now();
     for (const auto g: graph_data_base) {
-        ColorRefinementAmendibility::ColorRefinementAmendibility cra(g);
-        if (cra.check_amendability()) {
+        ColorRefinementAmenability::ColorRefinementAmenability cra(g);
+        if (cra.check_amenability()) {
             num_is_amendable += 1;
         }
     }

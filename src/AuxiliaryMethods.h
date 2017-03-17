@@ -1,7 +1,7 @@
 /**********************************************************************
  * Copyright (C) 2017 Christopher Morris <christopher.morris@udo.edu>
  *
- * This file is part of Amendable. An implementation of the algorithm described in:
+ * This file is part of Amenable. An implementation of the algorithm described in:
  *
  * @InProceedings{Arvind+2015,
  *   author = "Arvind, V. and K{\"o}bler, Johannes and Rattan, Gaurav and Verbitsky, Oleg",
@@ -11,12 +11,12 @@
  *   pages = "339--350"
  * }
  *
- * Amendable can not be copied or distributed without the express
+ * Amenable can not be copied or distributed without the express
  * permission of Christopher Morris.
  *********************************************************************/
 
-#ifndef WLFAST_AUXILIARYMETHODS_H
-#define WLFAST_AUXILIARYMETHODS_H
+#ifndef AMENABILITY_TEST_AUXILIARYMETHODS_H
+#define  AMENABILITY_TEST_AUXILIARYMETHODS_H
 
 #include <fstream>
 #include <iostream>
@@ -37,4 +37,4 @@ namespace AuxiliaryMethods {
     GraphDatabase read_graph_txt_file(string data_set_name);
 }
 
-#endif // WLFAST_AUXILIARYMETHODS_H
+#endif //  AMENABILITY_TEST_AUXILIARYMETHODS_H

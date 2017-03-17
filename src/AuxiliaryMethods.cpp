@@ -1,7 +1,7 @@
 /**********************************************************************
  * Copyright (C) 2017 Christopher Morris <christopher.morris@udo.edu>
  *
- * This file is part of Amendable. An implementation of the algorithm described in:
+ * This file is part of Amenable. An implementation of the algorithm described in:
  *
  * @InProceedings{Arvind+2015,
  *   author = "Arvind, V. and K{\"o}bler, Johannes and Rattan, Gaurav and Verbitsky, Oleg",
@@ -11,7 +11,7 @@
  *   pages = "339--350"
  * }
  *
- * Amendable can not be copied and/or distributed without the express
+ * Amenable can not be copied and/or distributed without the express
  * permission of Christopher Morris.
  *********************************************************************/
 
@@ -37,7 +37,7 @@ namespace AuxiliaryMethods {
         string line;
         vector<uint> graph_indicator;
         ifstream myfile(
-                "/home/morris/amendibility_test/data_sets/" + data_set_name + "/" + data_set_name +
+                "/home/morris/amenability_test/data_sets/" + data_set_name + "/" + data_set_name +
                 "_graph_indicator.txt");
         if (myfile.is_open()) {
             while (getline(myfile, line)) {
@@ -56,7 +56,7 @@ namespace AuxiliaryMethods {
         string label;
         Labels node_labels;
         ifstream labels(
-                "/home/morris/amendibility_test/data_sets/" + data_set_name + "/" + data_set_name + "_node_labels.txt");
+                "/home/morris/amenability_test/data_sets/" + data_set_name + "/" + data_set_name + "_node_labels.txt");
         if (labels.is_open()) {
             while (getline(labels, label)) {
                 node_labels.push_back(stoul(label));
@@ -93,7 +93,7 @@ namespace AuxiliaryMethods {
         // Insert edges for each graph.
         vector<int> edges;
         ifstream edge_file(
-                "/home/morris/amendibility_test/data_sets/" + data_set_name + "/" + data_set_name + "_A.txt");
+                "/home/morris/amenability_test/data_sets/" + data_set_name + "/" + data_set_name + "_A.txt");
         if (edge_file.is_open()) {
             while (getline(edge_file, line)) {
                 vector<int> r = split_string(line);

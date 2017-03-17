@@ -1,4 +1,4 @@
-# Amendibility Test ###
+# Amenability Test ###
 Implementation of the algorithm described in the paper ["On the Power of Color Refinement"](https://link.springer.com/chapter/10.1007/978-3-319-22177-9_26).
 
 ## Compile

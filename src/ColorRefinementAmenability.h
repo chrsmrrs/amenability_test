@@ -11,12 +11,12 @@
  *   pages = "339--350"
  * }
  *
- * Amendable can not be copied or distributed without the express
+ * Amenable can not be copied or distributed without the express
  * permission of Christopher Morris.
  *********************************************************************/
 
-#ifndef AMEN_COLORREFINEMENTAMENDIBILITY_H
-#define AMEN_COLORREFINEMENTAMENDIBILITY_H
+#ifndef AMEN_COLORREFINEMENTAMENABILITY_H
+#define AMEN_COLORREFINEMENTAMENABILITY_H
 
 #include <iostream>
 #include <unordered_map>
@@ -27,17 +27,17 @@ using Labels = vector<Label>;
 using Labeling = std::unordered_multimap<Label, Node>;
 
 
-namespace ColorRefinementAmendibility {
-    class ColorRefinementAmendibility {
+namespace ColorRefinementAmenability {
+    class ColorRefinementAmenability {
     public:
         // Constructor.
-        explicit ColorRefinementAmendibility(const GraphLibrary::Graph &graph);
+        explicit ColorRefinementAmenability(const GraphLibrary::Graph &graph);
 
-        // Check if graph "m_graph" is amendable.
-        bool check_amendability();
+        // Check if graph "m_graph" is amenable.
+        bool check_amenability();
 
         // Destructor.
-        ~ColorRefinementAmendibility();
+        ~ColorRefinementAmenability();
 
     private:
         // A graph.
@@ -53,4 +53,4 @@ namespace ColorRefinementAmendibility {
     };
 }
 
-#endif //AMEN_COLORREFINEMENTAMENDIBILITY_H
+#endif //AMEN_COLORREFINEMENTAMENABILITY_H
