@@ -15,8 +15,8 @@
  * permission of Christopher Morris.
  *********************************************************************/
 
-#ifndef AMEN_GRAPH_H
-#define AMEN_GRAPH_H
+#ifndef AMENABILITY_TEST_GRAPH_H
+#define AMENABILITY_TEST_GRAPH_H
 
 #include <unordered_set>
 #include <vector>
@@ -128,4 +128,4 @@ namespace GraphLibrary {
     typedef vector<Graph> GraphDatabase;
 }
 
-#endif //AMEN_GRAPH_H
+#endif //AMENABILITY_TEST_GRAPH_H

@@ -26,17 +26,17 @@ int main() {
     GraphDatabase graph_data_base = AuxiliaryMethods::read_graph_txt_file("NCI1");
     cout << "Graph data base loaded." << endl;
 
-    double num_is_amendable = 0;
+    double num_is_amenable = 0;
     auto start = chrono::high_resolution_clock::now();
     for (const auto g: graph_data_base) {
         ColorRefinementAmenability::ColorRefinementAmenability cra(g);
         if (cra.check_amenability()) {
-            num_is_amendable += 1;
+            num_is_amenable += 1;
         }
     }
     auto end = chrono::high_resolution_clock::now();
 
-    cout << num_is_amendable / graph_data_base.size() * 100.0 << endl;
+    cout << num_is_amenable / graph_data_base.size() * 100.0 << endl;
     cout << "Running time [s]: " << chrono::duration<double>(end - start).count() / graph_data_base.size() << endl;
 
     return 0;
