@@ -1,7 +1,7 @@
 /**********************************************************************
  * Copyright (C) 2017 Christopher Morris <christopher.morris@udo.edu>
  *
- * This file is part of Amenable. An implementation of the algorithm described in:
+ * This file is part of amenability_test. An implementation of the algorithm described in:
  *
  * @InProceedings{Arvind+2015,
  *   author = "Arvind, V. and K{\"o}bler, Johannes and Rattan, Gaurav and Verbitsky, Oleg",
@@ -11,7 +11,7 @@
  *   pages = "339--350"
  * }
  *
- * Amenable can not be copied or distributed without the express
+ * Amenability_test can not be copied or distributed without the express
  * permission of Christopher Morris.
  *********************************************************************/
 
@@ -31,10 +31,10 @@ using namespace GraphLibrary;
 
 namespace AuxiliaryMethods {
     // Simple function for converting a comma separated string into a vector of integers.
-    vector<int> split_string(string s);
+    vector<int> split_string(const string s);
 
     // Parser for text-based graph format from http://graphkernels.cs.tu-dortmund.de.
-    GraphDatabase read_graph_txt_file(string data_set_name);
+    GraphDatabase read_graph_txt_file(const string data_set_name);
 }
 
 #endif //  AMENABILITY_TEST_AUXILIARYMETHODS_H

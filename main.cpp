@@ -1,7 +1,7 @@
 /**********************************************************************
  * Copyright (C) 2017 Christopher Morris <christopher.morris@udo.edu>
  *
- * This file is part of Amendable.
+ * This file is part of amenability_test.
  *
  * Implementation of the algorithm described in:
  *
@@ -13,7 +13,7 @@
  *   pages="339--350"
  * }
  *
- * Amendable can not be copied or distributed without the express
+ * Amenability_test can not be copied or distributed without the express
  * permission of Christopher Morris.
  *********************************************************************/
 
